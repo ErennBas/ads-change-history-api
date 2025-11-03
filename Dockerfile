@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Bağımlılıkları yükle
-RUN npm ci --only=production
+RUN npm i
 
 # Uygulama dosyalarını kopyala
 COPY . .
